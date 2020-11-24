@@ -1,0 +1,17 @@
+project_name: news2020  # also the folder name of the dataset that under data_path folder
+train_set: train2020
+val_set: val2020
+num_gpus: 1
+
+# mean and std in RGB order, actually this part should remain unchanged as long as your dataset is similar to coco.
+mean: [0.538,  0.474, 0.442]
+std: [0.301, 0.294, 0.291]
+
+# this is coco anchors, change it if necessary
+anchors_scales: '[2 ** 0, 2 ** (1.0 / 3.0), 2 ** (2.0 / 3.0)]'
+anchors_ratios: '[(1.0, 1.0), (1.4, 0.7), (0.7, 1.4)]'
+
+# must match your dataset's category_id.
+# category_id is one_indexed,
+# for example, index of 'car' here is 2, while category_id of is 3
+obj_list: ['柚', '皋', '莲', '枣', '樱', '桐', '椿', '柊', '菖', '八百比丘尼', '药店老板', '瓜之介', '阿菊', '其他']  # 顺序很重要
