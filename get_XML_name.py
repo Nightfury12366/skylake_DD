@@ -2,7 +2,7 @@ import os
 
 # os.walk方法获取当前路径下的root（所有路径）、dirs（所有子文件夹）、files（所有文件）
 
-path = r"/home/skylake/skylake_files/pic_sky_project/anns_val"
+path = r"/home/skylake/skylake_project/skylake_DD/datasets/HK_project/pic_HK&labels/anns_val"
 
 fileout = open('XML_val_name.txt', 'wt')
 
